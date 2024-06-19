@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: rgba(242, 147, 37, 0.76);
+    ;
+}
+
+.logo {
+    align-items: center;
+    text-align: center;
+    margin-top: -25px;
+}
+
+.social-media{
+    text-align: right;
+    margin-top: -35px;
+}
+
+.social-media a {
+    margin: 0 5px;
+}
+
+.social-media img {
+    width: 30px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.registration {
+    display: flex;
+    background-color: #FFA500;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1223px;
+    height: 714px;
+}
+
+.illustration {
+    display: none;
+}
+
+.illustration svg {
+    width: 450px;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 130px;
+}
+
+.form-container {
+    padding: 20px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 34px;
+    color: #000000;
+    font-weight: lighter;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container form input {
+    margin-top: 20px;
+    margin-bottom: 35px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    width: 391px;
+    height: 44px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container form button {
+    padding: 10px;
+    background-color: #20B2AA;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+footer {
+    background-color: rgba(242, 147, 37, 0.76);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .registration {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    .illustration {
+        display: block;
+        width: 50%;
+    }
+
+    .form-container {
+        width: 50%;
+    }
+}
